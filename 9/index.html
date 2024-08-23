@@ -1,0 +1,49 @@
+<!doctype html> 
+<html>
+    <head> 
+        <title>Box Model</title>
+        <meta charset="utf-8" />
+        <style type="text/css">
+            body { background: hsl(60, 3%, 85%); 
+                }
+            #conteudo{
+                background: #FFFFFF;
+                padding: 10px;
+                width: 900px;
+                margin: 30px auto;
+                }
+            .caixa{
+                background: red; 
+                margin: 10px;
+                width: 100px;
+                height: 100px;
+                color: #FFFFFF; }
+            #relativo{
+                 position: relative;
+                  Left: 30px;
+                    } 
+            #absoluto{position: absolute;
+                 Left: 30px;
+                } 
+            #fixo{
+                position: fixed;
+                Left: 200px;
+                top: 0px; }
+        </style>
+    </head>
+    <body> 
+        <span>Container body</span>
+        <div id="conteudo" id=""> 
+            Container div 
+            <div class="caixa" id="relativo"> 
+                Relativo
+            </div>
+            <div class="caixa" id="absoluto"> 
+                Absoluto
+            </div>
+            <div class="caixa" id="fixo"> 
+                Fixo
+            </div>
+        </div>
+    </body>
+</html>
